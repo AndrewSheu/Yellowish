@@ -7,20 +7,128 @@
 }
 
 html {
-  font-size: 30px;
+  font-size: 10px;
   font-family: "Comforter", cursive;
   font-family: "Josefin Sans", sans-serif;
 }
 
-<!-- 文字装饰 > 
-a {
+<!-- 文字装饰 > a {
   text-decoration: none;
 }
 
 .container {
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+}
+
+#header .header {
+  min-height: 8vh;
+  background-color: rgba(255, 238, 0, 0.61);
+  transition: 0.3s ease background-color;
+}
+
+#header .nav-bar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+  }
+
+  #header .nav-list ul a {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+#header .nav-list ul li:hover a {
+  color: crimson;
+}
+
+
+
+
+#hero {
+  background-image: url(Picture/Background_photo.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(184, 65, 65);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+#hero h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+#hero .cta {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  border: 2px solid yellow;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+#hero .cta:hover {
+  color: rgb(0, 0, 0);
+  background-color: yellow;
+}
+
+#services .service {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#services .service-top {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#services .service-botton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
