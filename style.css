@@ -16,8 +16,8 @@ a {
   text-decoration: none;
 }
 
-h1 {
-    font-size: 5rem;
+#header h1 {
+    font-size: 6rem;
     color: white;
 }
 
@@ -40,7 +40,7 @@ h1 {
 
 #header .header {
   min-height: 8vh;
-  background-color: rgba(255, 238, 0, 0.61);
+  background-color: rgba(255, 247, 128, 0.61);
   transition: 0.3s ease background-color;
 }
 
@@ -55,7 +55,7 @@ h1 {
 }
 
 #header .nav-list ul a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
   text-decoration: none;
@@ -120,23 +120,52 @@ h1 {
   background-color: yellow;
 }
 
-#services .service {
+#service .service {
   flex-direction: column;
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
   padding: 100px 0;
+  font-size: 3rem;
 }
 
-#services .service-top {
+#service .service-top {
   max-width: 500px;
   margin: 0 auto;
+  font-size: 10rem;
 }
 
-#services .service-botton {
+#service .service-botton {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
 }
+
+#footer {
+    background-color: rgba(255, 247, 128, 0.61);
+}
+
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+#footer h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  #footer .social-item {
+      display: inline-block;
+  }
