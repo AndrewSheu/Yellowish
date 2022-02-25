@@ -16,17 +16,17 @@ a {
   text-decoration: none;
 }
 
-#header h1 {
-    font-size: 6rem;
-    color: white;
-}
-
 .container {
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#header h1 {
+  font-size: 6rem;
+  color: white;
 }
 
 #header {
@@ -40,7 +40,7 @@ a {
 
 #header .header {
   min-height: 8vh;
-  background-color: rgba(255, 247, 128, 0.61);
+  background-color: rgba(0, 128, 0, 0.719);
   transition: 0.3s ease background-color;
 }
 
@@ -74,107 +74,109 @@ a {
 }
 
 #hero {
-  background-image: url(Picture/Background_photo.jpg);
-  background-size: cover;
-  background-position: top center;
   position: relative;
-}
-
-#hero::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(184, 65, 65);
-  opacity: 0.7;
-  z-index: -1;
+  background-color: beige;
 }
 
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size: 4rem;
+  font-size: 5rem;
   position: relative;
-  color: rgb(255, 255, 255);
-  background-color: rgb(223, 223, 150);
+  color: green;
 }
 
 #hero .cta {
   display: inline-block;
-  padding: 10px 30px;
+  padding: 8px 20px;
   background-color: transparent;
-  color: yellow;
+  color: green;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
-  margin-top: 30px;
-  border: 2px solid yellow;
+  margin-top: 20px;
+  margin-left: 80px;
+  border: 1.5px solid green;
   transition: 0.3s ease;
   transition-property: background-color, color;
 }
 
 #hero .cta:hover {
-  color: rgb(0, 0, 0);
-  background-color: yellow;
+  color: rgb(255, 255, 255);
+  background-color: green;
 }
 
-#service .service {
-  flex-direction: column;
-  text-align: center;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 100px 0;
+#hero img {
+  position: relative;
+  left: 50px;
+  top: 30px;
+  width: 500px;
+  height: auto;
+}
+
+#menu {
+  background-color: white;
   font-size: 3rem;
 }
 
-#service .service-top {
-  max-width: 500px;
-  margin: 0 auto;
-  font-size: 10rem;
+#menu .menu {
+  flex-direction: row;
 }
 
-#service .service-botton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
+#menu .menu-right {
+  margin-left: 10%;
+}
+
+#menu .menu-left {
+  margin-left: 10%;
+}
+
+
+
+#menu img {
+  width: 400px;
+  height: auto;
+}
+
+#booking .booking {
+  flex-direction: column;
+  background-color: beige;
+  font-size: 3rem;
 }
 
 #footer {
-    background-color: rgba(255, 247, 128, 0.61);
+  background-color: rgba(0, 128, 0, 0.719);
+  color: white;
 }
 
 #footer .footer {
-    flex-direction: column;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-bottom: 15px;
+  flex-direction: column;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-bottom: 15px;
 }
 
 #footer h1 {
-    font-size: 3rem;
-    font-style: italic;
+  font-size: 3rem;
+  font-style: italic;
 }
 
 #footer h2 {
-    font-weight: 500;
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  #footer .social-icon {
-    display: flex;
-    margin-bottom: 30px;
-  }
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#footer .social-icon {
+  display: flex;
+  margin-bottom: 30px;
+}
 
-  #footer .social-item {
-      display: inline-block;
-  }
+#footer .social-item {
+  display: inline-block;
+}
 
-  #footer p {
-    font-size: 1.3rem;
-  }
+#footer p {
+  font-size: 1.3rem;
+}
